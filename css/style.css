@@ -65,4 +65,8 @@ top: 0;
   }
 
   /*The home page/Hero Image*/
-  
+  #home {
+    display: flex; 
+    flex-direction: column; /*will display flex items from top to bottom*/
+    background-color: antiquewhite;
+  }
