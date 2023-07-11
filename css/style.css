@@ -70,7 +70,13 @@ opacity: .8; /*design, come back later*/
   #home {
     display: flex; 
     flex-direction: column; /*will display flex items from top to bottom*/
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(0, 0, 0.5); /*colour of container background*/
+    height: 760px;
+    width: 100%;
+    justify-content: center; /*justification position of content*/
+    align-items: center; /*align items in the specific boxes in container*/
+    color: antiquewhite; /*color of boxed items*/
+    opacity: 0.8; /*opacity of container background*/
     
   }
 
