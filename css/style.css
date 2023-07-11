@@ -32,7 +32,8 @@ top: 0;
 
 .navbar ul li {  /*edits the static words in navbar list + added border around words + added space between words and border*/
     font-weight: 600;
-    border: 1px solid rgb(209, 157, 157);
+    background-color: rgb(179, 157, 161);
+    border: 1px solid transparent;
     border-radius: 28px;
     margin: 0  20px; /*some spacing between the words in the container*/
     padding: 10px 10px;
@@ -45,11 +46,12 @@ top: 0;
   color: aliceblue;
   font: system;
   text-decoration: none; /*removes blue color and underline*/
+  transition: all 2s ease;/*changes to color chosen for link hover smoother in 2s*/
   }
   
   /* mouse over link */
   .navbar ul li a:hover {
-    color: red;
+    color: blue;
   }
   
   /* selected link */
