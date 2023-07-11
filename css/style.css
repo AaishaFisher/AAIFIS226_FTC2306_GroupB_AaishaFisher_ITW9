@@ -9,6 +9,8 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+
+/*SETTING UP THE NAVBAR*/
 .navbar {  /*navigation bar container on the page itself*/
 display: flex;  /*makes the nav bar itself a container*/
 justify-content: center;  /*moves items inside container along main axis*/
@@ -29,10 +31,28 @@ top: 0;
 
 
 .navbar ul li {  /*edits the static words in navbar list + added border around words + added space between words and border*/
-    font-weight: 700;
+    font-weight: 600;
     border: 1px solid rgb(209, 157, 157);
     border-radius: 28px;
     margin: 0  20px; /*some spacing between the words in the container*/
     padding: 10px 10px;
 }
 
+/*HOW THE NAVBAR INTERACTS AND WITH THE MOUSE */
+
+/* unvisited link */
+.navbar ul li a {
+  color: aliceblue;
+  font: system;
+  text-decoration: none; /*removes blue color and underline*/
+  }
+  
+  /* mouse over link */
+  .navbar ul li a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  .navbar ul li a:active {
+    color: yellow;
+  }
