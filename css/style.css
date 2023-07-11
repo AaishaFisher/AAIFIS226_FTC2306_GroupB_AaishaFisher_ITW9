@@ -70,3 +70,23 @@ top: 0;
     flex-direction: column; /*will display flex items from top to bottom*/
     background-color: antiquewhite;
   }
+
+#home ::before {
+    content: "";
+    position: absolute; /*chosen because i want elements overlapping the picture*/
+    top: 0;
+    right: 0;
+    background-color: rgb(8, 6, 6);
+    background-image: url(https://img.freepik.com/free-photo/shiny-golden-particles-with-light-streak_1017-32797.jpg?w=740&t=st=1689149991~exp=1689150591~hmac=d1864d749ab6c1ea5f34e0d7a732846520c8849821b9c859376a4254c0f2e72d);
+    background-repeat: no-repeat; /*image only appears once*/
+    background-position: center; 
+    background-attachment:scroll ; /*keeps the image at the top*/
+    background-size: cover; /*image covers the entire container*/
+    height: 800px;
+    width: 100%;
+    z-index: -1; /*moves the image behind the elements, so it displays as an actual background image*/
+
+
+    
+
+}
