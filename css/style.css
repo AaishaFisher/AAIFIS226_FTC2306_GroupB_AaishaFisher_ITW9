@@ -14,7 +14,7 @@ body {
 .navbar {  /*navigation bar container on the page itself*/
 display: flex;  /*makes the nav bar itself a container*/
 justify-content: center;  /*moves items inside container along main axis*/
-background-color: gray;
+background-color: transparent;
 align-items: center;
 position:-webkit-sticky; /* for safari*/
 position: sticky; /* sticks the navbar to the top*/
@@ -26,7 +26,8 @@ top: 0;
     justify-items: center; /*yes this ignores flex items, im aware*/
     list-style: none; /*removed the dots*/
     margin-top: 15px; 
-    margin-bottom: 15px;  
+    margin-bottom: 15px; 
+     
 }
 
 
@@ -68,15 +69,15 @@ top: 0;
   #home {
     display: flex; 
     flex-direction: column; /*will display flex items from top to bottom*/
-    background-color: antiquewhite;
+    background-color: rgb(238, 234, 230);
   }
 
-#home ::before {
+#home ::before { /*creates a blank canvas that acts as a container block to work on to place hero image on*/
     content: "";
     position: absolute; /*chosen because i want elements overlapping the picture*/
     top: 0;
     right: 0;
-    background-color: rgb(8, 6, 6);
+    background-color: rgb(14, 12, 12);
     background-image: url(https://img.freepik.com/free-photo/shiny-golden-particles-with-light-streak_1017-32797.jpg?w=740&t=st=1689149991~exp=1689150591~hmac=d1864d749ab6c1ea5f34e0d7a732846520c8849821b9c859376a4254c0f2e72d);
     background-repeat: no-repeat; /*image only appears once*/
     background-position: center; 
