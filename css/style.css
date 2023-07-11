@@ -14,11 +14,12 @@ body {
 .navbar {  /*navigation bar container on the page itself*/
 display: flex;  /*makes the nav bar itself a container*/
 justify-content: center;  /*moves items inside container along main axis*/
-background-color: transparent;
+background-color: rgb(24, 24, 24);
 align-items: center;
 position:-webkit-sticky; /* for safari*/
 position: sticky; /* sticks the navbar to the top*/
 top: 0;
+opacity: .8; /*design, come back later*/
 }
 
 .navbar ul {   /*positions the items inside navbar containter */
@@ -52,7 +53,7 @@ top: 0;
   /* mouse over link */
   .navbar ul li a:hover { /*word will change when mouse hovers over it*/
     color: black;
-    background-color: rgb(179, 157, 161);
+    background-color: rgb(24, 24, 24);
     border: 2px solid black; /*will appear after transition*/
     border-radius: 28px; /*will appear after transition*/
     padding: 10px 10px; /*will as it transitions*/
@@ -69,7 +70,8 @@ top: 0;
   #home {
     display: flex; 
     flex-direction: column; /*will display flex items from top to bottom*/
-    background-color: rgb(238, 234, 230);
+    background-color: rgb(24, 24, 24);
+    
   }
 
 #home ::before { /*creates a blank canvas that acts as a container block to work on to place hero image on*/
@@ -77,7 +79,7 @@ top: 0;
     position: absolute; /*chosen because i want elements overlapping the picture*/
     top: 0;
     right: 0;
-    background-color: rgb(14, 12, 12);
+    background-color: black;
     background-image: url(https://img.freepik.com/free-photo/shiny-golden-particles-with-light-streak_1017-32797.jpg?w=740&t=st=1689149991~exp=1689150591~hmac=d1864d749ab6c1ea5f34e0d7a732846520c8849821b9c859376a4254c0f2e72d);
     background-repeat: no-repeat; /*image only appears once*/
     background-position: center; 
@@ -86,8 +88,6 @@ top: 0;
     height: 800px;
     width: 100%;
     z-index: -1; /*moves the image behind the elements, so it displays as an actual background image*/
-
-
-    
+    opacity: .25;
 
 }
