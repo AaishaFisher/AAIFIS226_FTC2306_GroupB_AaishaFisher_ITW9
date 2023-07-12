@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box; /*webpage accounts for margins and padding*/
-    margin: 0; 
-    padding: 0;
+  box-sizing: border-box; /*webpage accounts for margins and padding*/
+  margin: 0; 
+  padding: 0;
 }
 
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 
@@ -20,80 +20,80 @@ position:-webkit-sticky; /* for safari*/
 position: sticky; /* sticks the navbar to the top*/
 top: 0;
 opacity: .8; /*design, come back later*/
+z-index: 1; /* !!!!!!this will bring the navbar to the front , so the opacity layer in the main doest affect it*/
+opacity: 0.9;
 }
 
 .navbar ul {   /*positions the items inside navbar containter */
-    display: flex;
-    justify-items: center; /*yes this ignores flex items, im aware*/
-    list-style: none; /*removed the dots*/
-    margin-top: 15px; 
-    margin-bottom: 15px; 
-     
+  display: flex;
+  justify-items: center; /*yes this ignores flex items, im aware*/
+  list-style: none; /*removed the dots*/
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+
+   
 }
 
 
 .navbar ul li {  /*edits the static words in navbar list + added space between words*/
-    font-weight: 600;
-    border: 1px solid transparent;
-    border-radius: 28px;
-    margin: 0  20px; /*some spacing between the words in the container*/
-   
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 28px;
+  margin: 0  20px; /*some spacing between the words in the container*/
+ 
 }
 
 /*HOW THE NAVBAR INTERACTS AND WITH THE MOUSE */
 
 /* unvisited link */
 .navbar ul li a {
-  color: greenyellow;
-  font: system;
-  text-decoration: none; /*removes blue color and underline*/
-  transition: all 2s ease;/*changes to color chosen for link hover smoother in 2s*/
-  }
-  
-  /* mouse over link */
-  .navbar ul li a:hover { /*word will change when mouse hovers over it*/
-    color: black;
-    background-color: rgb(24, 24, 24);
-    border: 2px solid black; /*will appear after transition*/
-    border-radius: 28px; /*will appear after transition*/
-    padding: 10px 10px; /*will as it transitions*/
-    box-shadow: 0px 0px 10px red; /*will appear after transition*/
-    cursor:pointer; /*changes the way cursor looks like*/
-  }
-  
-  /* selected link */
-  .navbar ul li a:active {
-    color: yellow;
-  }
+color: greenyellow;
+font: system;
+text-decoration: none; /*removes blue color and underline*/
+transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*/
+}
 
-  /*The home page/Hero Image*/
-  #home {
-    display: flex; 
-    flex-direction: column; /*will display flex items from top to bottom*/
-    background-color: rgb(0, 0, 0.5); /*colour of container background*/
-    height: 760px;
-    width: 100%;
-    justify-content: center; /*justification position of content*/
-    align-items: center; /*align items in the specific boxes in container*/
-    color: antiquewhite; /*color of boxed items*/
-    opacity: 0.8; /*opacity of container background*/
-    
-  }
+/* mouse over link */
+.navbar ul li a:hover { /*word will change when mouse hovers over it*/
+  color: rgb(228, 199, 199);
+  background-color: rgb(24, 24, 24);
+  border: 1px solid black; /*will appear after transition*/
+  border-radius: 28px; /*will appear after transition*/
+  padding: 10px 10px; /*will as it transitions*/
+  box-shadow: 0px 0px 10px rgb(28, 255, 7); /*will appear after transition*/
+  cursor:pointer; /*changes the way cursor looks like*/
+}
+
+/* selected link */
+.navbar ul li a:active {
+  color: yellow;
+}
+
+/*The home page/Hero Image*/
+#home {
+  display: flex; 
+  flex-direction: column; /*will display flex items from top to bottom*/
+  background-color: rgb(24, 24, 24);
+  height: 750px;
+  width: 100%;
+  opacity: 0.9;
+  
+}
 
 #home ::before { /*creates a blank canvas that acts as a container block to work on to place hero image on*/
-    content: "";
-    position: absolute; /*chosen because i want elements overlapping the picture*/
-    top: 0;
-    right: 0;
-    background-color: black;
-    background-image: url(https://img.freepik.com/free-photo/shiny-golden-particles-with-light-streak_1017-32797.jpg?w=740&t=st=1689149991~exp=1689150591~hmac=d1864d749ab6c1ea5f34e0d7a732846520c8849821b9c859376a4254c0f2e72d);
-    background-repeat: no-repeat; /*image only appears once*/
-    background-position: center; 
-    background-attachment:scroll ; /*keeps the image at the top*/
-    background-size: cover; /*image covers the entire container*/
-    height: 800px;
-    width: 100%;
-    z-index: -1; /*moves the image behind the elements, so it displays as an actual background image*/
-    opacity: .25;
+  content: "";
+  position: absolute; /*chosen because i want elements overlapping the picture*/
+  top: 0;
+  right: 0;
+  background-color: black;
+  background-image: url(https://img.freepik.com/free-photo/shiny-golden-particles-with-light-streak_1017-32797.jpg?w=740&t=st=1689149991~exp=1689150591~hmac=d1864d749ab6c1ea5f34e0d7a732846520c8849821b9c859376a4254c0f2e72d);
+  background-repeat: no-repeat; /*image only appears once*/
+  background-position: center; 
+  background-attachment:scroll ; /*keeps the image at the top*/
+  background-size: cover; /*image covers the entire container*/
+  height: 800px;
+  width: 100%;
+  z-index: -1; /*moves the image behind the elements, so it displays as an actual background image*/
+  opacity: .25;
 
 }
