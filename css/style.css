@@ -74,10 +74,12 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   display: flex; 
   flex-direction: column; /*will display flex items from top to bottom*/
   background-color: rgb(24, 24, 24);
-  height: 750px;
+  height: 800px;
   width: 100%;
-  opacity: 0.9;
-  
+  opacity: 0.9;            
+  justify-content: center; /*flex specific and specifies how items will behave along main axis inside container*/
+  align-items: center; /*aligned the items along cross axis*/
+  color: antiquewhite;
 }
 
 #home ::before { /*creates a blank canvas that acts as a container block to work on to place hero image on*/
