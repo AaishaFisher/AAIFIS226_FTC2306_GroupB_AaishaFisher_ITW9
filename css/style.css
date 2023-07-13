@@ -288,21 +288,30 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 }
 
 .edu1 {
+  width: 500px;
+
+  height: 160px;
   padding: 5px;
   border: 1px solid rgb(88, 84, 78);
 }
 
 .edu2 {
+  width: 500px;
+  height: 160px;
   padding: 5px;
   border: 1px solid tan;
 }
 
 .exp1 {
+  width: 500px;
+  height: 160px;
   padding: 5px;
   border: 1px solid rgb(88, 84, 78);
 }
 
 .exp2 {
+  width: 500px;
+  height: 160px;
   padding: 5px;
   border: 1px solid tan;
 
@@ -311,4 +320,12 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 .mainHeading {
   margin-bottom: 10px;
   
+}
+
+#mainContent {
+  text-align: right;
+}
+
+#mainContenter {
+  text-align: left;
 }
