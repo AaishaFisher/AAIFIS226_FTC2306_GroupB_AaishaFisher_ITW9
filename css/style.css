@@ -17,8 +17,9 @@ justify-content: center;  /*moves items inside container along main axis*/
 background-color: rgb(24, 24, 24);
 align-items: center;
 position:-webkit-sticky; /* for safari*/
-position: sticky; /* sticks the navbar to the top*/
+position: fixed; /* sticks the navbar to the top*/
 top: 0;
+width: 100%;
 opacity: .8; /*design, come back later*/
 z-index: 1; /* !!!!!!this will bring the navbar to the front , so the opacity layer in the main doest affect it*/
 opacity: 0.9;
@@ -357,6 +358,9 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 
 
 
+
+
+
 /*THE SKILLS BAR*/
 
 
@@ -364,31 +368,65 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 50px;
+  margin-right: 500px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  
 }
 
 
 /* Container for skill bars */
 .container {
-  width: 100%; /* Full width */
-  background-color: #bdb7b7; /* Grey background */
+  margin-left: 48%;
+  border-radius: 20px;
+  width: 65%; 
+  background-color: #464338; /* Grey background */
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: rgb(119, 111, 111); /* text color */
+  text-align: left; /* Right-align text */
+  padding-top: 15px; /* Add top padding */
+  padding-bottom: 2px; /* Add bottom padding */
+  color: rgb(24, 22, 22); /* text color */
+  align-items: center;
+
+  
 }
 
-.html {width: 90%; background-color: #04AA6D;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.microsoft {width: 60%; background-color: #808080;} /* Dark Grey */
-.ui {width: 60%; background-color: #808080;} /* Dark Grey */
-.graphicD  {width: 90%; background-color: #04AA6D;}
+#skillsname {
+  margin-left: 49%;
+  margin-top: 20px;
+  font-size: larger;
+  padding-bottom: 5px;
+  font-weight: 800px;
+}
+
+.skills h2{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  letter-spacing: 0.5;
+  padding-top: 20px;
+ 
+}
 
 
 
+.html {width: 85%; background-color: #72e209;}
+.css {width: 70%; background-color: #72e209;} 
+.js {width: 60%; background-color: #72e209;} 
+.microsoft {width: 90%; background-color: #72e209;} 
+.ui {width: 75%; background-color: #72e209;}
+.graphicD  {width: 75%; background-color: #72e209;}
+
+
+.container:hover {
+  background-color: rgb(17, 16, 16);
+  
+
+}
 
 
 /*The portfolio grid
