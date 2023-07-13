@@ -142,34 +142,50 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 
 
 /*TINY LITTLE ABOUT SECTION*/
-#about {
+#About {
   display:flex;
   flex-direction: column;
-
+  margin-top: 15px;
+  margin-bottom: 50px;
+  box-sizing: border-box; /*essentially would prevent items from bleeding over the about container*/
+ padding: 25px;
 }
 
-.AboutSection {
-  display: flex;
-  flex-direction: column;
-  margin: 15px 0;
-
-}
-
-.AboutSection h1 {
+#About h1 {
   text-align: center;
-font-weight: bold;
-margin-bottom: 15px;
-font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
 }
+
+.AboutSection { /*contains the img, h2 and lil praragraph text*/
+  display: flex; /*by default flex will align items next to eachother in one row*/
+}
+
+
 
 .AboutSection img {
   
-  height: 200px;
-  width: 250px;
+  margin-top: 25px ;/*diplaying the image in the container */
+  margin-left: 20px;
+  height: 260px;
+  width: 350px;
+   
+}
+
+.intro { /*the paragragh text and the heading with my name container*/
+ display: flex; /*want text to remain underneath eachother*/
+ flex-direction: column;
+ padding-top: 25px;
+ padding-left: 20px;
+ padding: right 25px;
+ padding-bottom: 0;
+ text-align: justify;
 
 }
 
-.AboutSection h2, p {
-  display: flex;
-  flex-direction: row;
+.intro h2 { /*how the h2 will specifically look like in the container*/
+  font-size: 2rem;
+  text-align: justify;
 }
+
