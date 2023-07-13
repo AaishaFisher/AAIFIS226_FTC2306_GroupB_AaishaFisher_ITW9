@@ -288,19 +288,24 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 }
 
 .edu1 {
-  padding: 10px;
+  padding: 5px;
+  border: 1px solid rgb(88, 84, 78);
 }
 
 .edu2 {
-  padding: 10px;
+  padding: 5px;
+  border: 1px solid tan;
 }
 
 .exp1 {
-  padding: 10px;
+  padding: 5px;
+  border: 1px solid rgb(88, 84, 78);
 }
 
 .exp2 {
-  padding: 10px;
+  padding: 5px;
+  border: 1px solid tan;
+
 }
 
 .mainHeading {
