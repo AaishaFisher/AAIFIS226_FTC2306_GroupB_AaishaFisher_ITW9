@@ -99,3 +99,15 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   opacity: .25;
 
 }
+
+.main { /*to edit how the items in the main block will itself display*/
+  display: flex;
+  flex-direction: column; /*the items will display below eachother, including the buttons*/
+  /*border: 1px solid whitesmoke;*/
+  align-items: center;
+}
+
+#mainText {
+  font-family: 'Courier New', Courier, monospace;
+  
+}
