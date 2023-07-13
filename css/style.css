@@ -429,6 +429,52 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 }
 
 
+
+
+
+/*Form + contact me section*/
+
+form { /* the entire form*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+}
+
+.contactme { /*the entire section containing heading + form*/
+  background-color: #464338;
+  margin: ; /*come back to this at the end*/
+}
+
+.contactme h2 { /*the heading*/
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  padding-top: 30px;
+ 
+}
+
+.formsection{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  
+  }
+
+
+
+
+.bigname {
+  margin-left: 20px;
+}
+
+
+
+
+
 /*The portfolio grid
 
 #Portfolio {
