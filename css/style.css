@@ -246,11 +246,17 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 #main { /*copied the layout of the about section*/
   box-sizing: border-box; 
  padding: 25px;
+ text-align: justify;
+ padding-left: 100px;
+ padding-right: 100px;
 }
 
 .mainsection{ /*the container of the flexed items*/
   display: flex;
   justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  
 }
 
 #main h2{ /*the heading. this is outside of the flexbox*/
@@ -259,19 +265,45 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   margin-bottom: 10px;
   font-size: 2.5rem;
   letter-spacing: 0.5;
+  margin-bottom: 26px;
   
 }
 
 .Education { 
   display: flex; 
   flex-direction: column;
+ 
 }
 
-.divider {
+.divider { /*adds a customisable line in the middle*/
   border: 3px solid black;
+  margin-left: 20px;/*pushes the two boxes away from it*/
+  margin-right: 20px;
 }
 
 .Experience { 
   display: flex; 
   flex-direction: column;
+  
+}
+
+.edu1 {
+  padding: 10px;
+}
+
+.edu2 {
+  padding: 10px;
+}
+
+.exp1 {
+  padding: 10px;
+}
+
+.exp2 {
+  padding: 10px;
+}
+
+.mainHeading {
+  margin-bottom: 10px;
+  
 }
