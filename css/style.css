@@ -105,11 +105,37 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   flex-direction: column; /*the items will display below eachother, including the buttons*/
   /*border: 1px solid whitesmoke;*/
   align-items: center;
+  margin-left: 50%;
+  margin-bottom: 10%;
 }
 
-#mainText {
+#mainText { /*better display of text in the container*/
   font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
   text-align: center;
   margin: 20px 0;
+}
+
+/*THE BUTTONS ON THE HOME PAGE*/
+
+.Ibutton { /*the display of the button static mode*/
+  margin-bottom: 5px; /*space between buttons*/
+  padding: 10px; /*space between word and button border*/
+  background-color: transparent; 
+  color: whitesmoke;
+  border: 1px solid rgb(7, 240, 7);
+  border-radius: 15px;
+  outline: none;
+  transition: .5s ease; /*how button will interact when hovered over*/
+}
+
+.Ibutton:hover { /*how button will interact when hovered over*/
+  color: rgb(228, 199, 199);
+  background-color: rgb(24, 24, 24);
+  border: 1px solid black; /*copied navbar hover settings here*/
+  border-radius: 28px; 
+  padding: 10px 10px; 
+  box-shadow: 0px 0px 10px rgb(28, 255, 7),  0px 0px 10px rgb(42, 253, 23); /*will make the */
+  cursor:pointer; 
+  font-weight: bolder;
 }
