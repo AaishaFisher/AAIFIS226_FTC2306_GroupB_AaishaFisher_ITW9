@@ -109,5 +109,7 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 
 #mainText {
   font-family: 'Courier New', Courier, monospace;
-  
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
 }
