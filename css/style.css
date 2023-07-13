@@ -74,7 +74,7 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   display: flex; 
   flex-direction: column; /*will display flex items from top to bottom*/
   background-color: rgb(24, 24, 24);
-  height: 800px;
+  height: 820px;
   width: 100%;
   opacity: 0.9;            
   justify-content: center; /*flex specific and specifies how items will behave along main axis inside container*/
@@ -93,7 +93,7 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   background-position: center; 
   background-attachment:scroll ; /*keeps the image at the top*/
   background-size: cover; /*image covers the entire container*/
-  height: 800px;
+  height: 870px;
   width: 100%;
   z-index: -1; /*moves the image behind the elements, so it displays as an actual background image*/
   opacity: .25;
@@ -105,12 +105,12 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   flex-direction: column; /*the items will display below eachother, including the buttons*/
   /*border: 1px solid whitesmoke;*/
   align-items: center;
-  margin-left: 50%;
-  margin-bottom: 10%;
+  margin-left: 50%; /*moved the text to the right top side abit*/
+  margin-bottom: 10%; /*moves the flex items margins to the right top corner*/
 }
 
 #mainText { /*better display of text in the container*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Times New Roman', Times, serif;
   font-size: 2rem;
   text-align: center;
   margin: 20px 0;
