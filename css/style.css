@@ -139,3 +139,37 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   cursor:pointer; 
   font-weight: bolder;
 }
+
+
+/*TINY LITTLE ABOUT SECTION*/
+#about {
+  display:flex;
+  flex-direction: column;
+
+}
+
+.AboutSection {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+
+}
+
+.AboutSection h1 {
+  text-align: center;
+font-weight: bold;
+margin-bottom: 15px;
+font-size: 2.5rem;
+}
+
+.AboutSection img {
+  
+  height: 200px;
+  width: 250px;
+
+}
+
+.AboutSection h2, p {
+  display: flex;
+  flex-direction: row;
+}
