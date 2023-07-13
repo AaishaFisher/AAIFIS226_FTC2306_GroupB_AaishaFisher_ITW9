@@ -353,3 +353,65 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 #mainNamer {
   margin-bottom: 6px;
 }
+
+
+
+
+/*THE SKILLS BAR*/
+
+
+.skillSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #bdb7b7; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: rgb(119, 111, 111); /* text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.microsoft {width: 60%; background-color: #808080;} /* Dark Grey */
+.ui {width: 60%; background-color: #808080;} /* Dark Grey */
+.graphicD  {width: 90%; background-color: #04AA6D;}
+
+
+
+
+
+/*The portfolio grid
+
+#Portfolio {
+  box-sizing: border-box;
+
+
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+  width: 20%;
+  height: 10%;
+}
+.gridContainer > div {
+  background-color: #ccc;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+
+*/
