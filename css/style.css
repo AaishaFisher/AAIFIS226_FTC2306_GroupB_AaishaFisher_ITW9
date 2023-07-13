@@ -208,7 +208,7 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 
 .basicInfo ul { /*the basic info list*/
   justify-content: space-between;
-  list-style:; /*removed the dots*/
+  list-style; /*removed the dots*/
   margin-bottom: 15px; 
 
 }
@@ -238,4 +238,40 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 
 #item4 {
   margin-left: 65px;
+}
+
+/*EDUCATION AND EXPERIEMCE SECTIONS*/
+
+
+#main { /*copied the layout of the about section*/
+  box-sizing: border-box; 
+ padding: 25px;
+}
+
+.mainsection{ /*the container of the flexed items*/
+  display: flex;
+  justify-content: center;
+}
+
+#main h2{ /*the heading. this is outside of the flexbox*/
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 0.5;
+  
+}
+
+.Education { 
+  display: flex; 
+  flex-direction: column;
+}
+
+.divider {
+  border: 3px solid black;
+}
+
+.Experience { 
+  display: flex; 
+  flex-direction: column;
 }
