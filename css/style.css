@@ -156,6 +156,7 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 2.5rem;
+  letter-spacing: 0.5;
 }
 
 .AboutSection { /*contains the img, h2 and lil praragraph text*/
@@ -166,10 +167,12 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 
 .AboutSection img {
   
-  margin-top: 25px ;/*diplaying the image in the container */
+  margin-top: 20px ;/*diplaying the image in the container */
   margin-left: 20px;
   height: 260px;
   width: 350px;
+  padding-top: 15px;
+ 
    
 }
 
@@ -189,3 +192,50 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   text-align: justify;
 }
 
+.intro p {
+  font-size: 1.1rem;
+}
+
+.basicInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 19px;
+  
+/*background-color: rgb(189, 185, 185);*/
+
+}
+
+.basicInfo ul { /*the basic info list*/
+  justify-content: space-between;
+  list-style:; /*removed the dots*/
+  margin-bottom: 15px; 
+
+}
+
+.basicInfo ul li{ /*list items*/
+  /*border: 1px solid black;*/
+  margin: 10px 0;
+}
+
+/*the span items*/
+
+#item1, #item2, #item3, #item4 {
+  color: rgb(56, 37, 31);
+}
+
+#item1 { /*i want each item to display with equal space between them*/
+  margin-left: 100px;
+}
+
+#item2 {
+  margin-left: 89px;
+}
+
+#item3 {
+  margin-left: 63.5px;
+}
+
+#item4 {
+  margin-left: 65px;
+}
