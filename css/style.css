@@ -442,6 +442,7 @@ form { /* the entire form*/
   width: 100%;
   height: 450px;
  
+ 
 }
 
 .contactme { /*the entire section containing heading + form*/
@@ -454,7 +455,7 @@ form { /* the entire form*/
   font-weight: bold;
   margin-bottom: 5px;
   font-size: 2.5rem;
-  padding-top: 30px;
+  padding-top: 40px;
  
 }
 
@@ -465,12 +466,11 @@ form { /* the entire form*/
   
   }
 
-
-
-
-.bigname {
-  margin-left: 20px;
+.submitbtn {
+  color: #201f1f;
+  justify-content: center;
 }
+
 
 
 
@@ -481,7 +481,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   padding-top: 15px;
   padding-left: 40px;
   padding-right: 40px;
