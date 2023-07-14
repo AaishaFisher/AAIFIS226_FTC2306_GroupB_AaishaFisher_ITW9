@@ -250,6 +250,10 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
  text-align: justify;
  padding-left: 100px;
  padding-right: 100px;
+ margin-top: 10px;
+ margin-bottom: 15px;
+ margin-left: 25px;
+ margin-right: 25px;
 }
 
 .mainsection{ /*the container of the flexed items*/
@@ -263,10 +267,9 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
 #main h2{ /*the heading. this is outside of the flexbox*/
   text-align: center;
   font-weight: bold;
-  margin-bottom: 10px;
   font-size: 2.5rem;
   letter-spacing: 0.5;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   
 }
 
@@ -474,7 +477,8 @@ form { /* the entire form*/
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 450px;
+  height: 460px;
+  margin-top: 10px;
  
  
 }
