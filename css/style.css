@@ -537,9 +537,18 @@ textarea {
   text-decoration: none;
   background-color: #97651a;
   border-radius: 10px;
+  transition: all .1s ease;
 }
 
- 
+.cntct button:hover {
+  font-size: large;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px #48ff00;
+  color: black;
+  background-color: #afb93b;
+  box-shadow: 0 0 3px #48ff00;
+  border: 1.2px transparent red;
+}
 
 
 
