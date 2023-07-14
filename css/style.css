@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+button.submit.btn {}
+
+button.submit.btn {}
+
 
 body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -468,46 +472,74 @@ padding: 20px
 
 
 
-
-/*Form + contact me section*/
-
-form { /* the entire form*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 460px;
-  margin-top: 10px;
- 
- 
-}
-
-.contactme { /*the entire section containing heading + form*/
+/*The contact form*/
+.cntct {
   background-color: #464338;
-  margin: ; /*come back to this at the end*/
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
-.contactme h2 { /*the heading*/
+.contactform {
+  background-color: #333;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contactform:hover {
+
+}
+
+h1 {
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 2.5rem;
-  padding-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+form {
+  margin-top: 20px;
+}
+
+.cntct p {
+text-align: center;
+color: #ddc5c5;
+ justify-content: space-around;
+ font-size: 1.005rem;
+ padding: 0 40px;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  border-color: #18e222;
+}
+
+textarea {
+  margin-bottom: 20px;
+}
+
+.cntct button {
+  display: block;
+  color: #181d14;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 25px;
+  cursor:pointer;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  text-decoration: none;
+  background-color: #97651a;
+  border-radius: 10px;
+}
+
  
-}
-
-.formsection{
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  
-  }
-
-.submitbtn {
-  color: #201f1f;
-  justify-content: center;
-}
 
 
 
@@ -524,6 +556,7 @@ footer {
   padding-left: 40px;
   padding-right: 40px;
   background-color: #201f1f;
+
   
 }
 footer a {
@@ -545,6 +578,3 @@ footer a:hover {
 
   
 }
-
-
-

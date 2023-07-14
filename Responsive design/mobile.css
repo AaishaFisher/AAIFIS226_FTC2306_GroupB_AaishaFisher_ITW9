@@ -1,0 +1,5 @@
+@media only screen and (max-width: 600px) 
+    .navbar {
+      background-color: rgb(0, 175, 233);
+      text-align: right;
+    }
