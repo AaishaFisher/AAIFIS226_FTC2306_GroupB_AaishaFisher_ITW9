@@ -4,9 +4,7 @@
   padding: 0;
 }
 
-button.submit.btn {}
 
-button.submit.btn {}
 
 
 body {
@@ -461,12 +459,14 @@ padding: 20px
  flex-wrap: wrap; /*puts the images all in the flex container*/
  justify-content: space-around; /*creates 'column' space between flex boxes in the container*/
  box-sizing: border-box;
+
 }
 
 .gallery img {
   width: 360px;
   height: 240px;
   margin: 10px /*created a margin to place the container in*/
+  
 }
 
 
@@ -488,9 +488,6 @@ padding: 20px
   padding: 20px;
 }
 
-.contactform:hover {
-
-}
 
 h1 {
   text-align: center;
