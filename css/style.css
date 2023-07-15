@@ -1,617 +1,617 @@
 * {
-  box-sizing: border-box; /*webpage accounts for margins and padding*/
-  margin: 0; 
-  padding: 0;
-}
-
-
-
-
-body {
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #ebe9e9;
-}
-
-
-/*SETTING UP THE NAVBAR*/
-.navbar {  /*navigation bar container on the page itself*/
-display: flex;  /*makes the nav bar itself a container*/
-justify-content: center;  /*moves items inside container along main axis*/
-background-color: rgb(24, 24, 24);
-align-items: center;
-position:-webkit-sticky; /* for safari*/
-position: fixed; /* sticks the navbar to the top*/
-top: 0;
-width: 100%;
-opacity: .8; /*design, come back later*/
-z-index: 1; /* !!!!!!this will bring the navbar to the front , so the opacity layer in the main doest affect it*/
-opacity: 0.9;
-}
-
-.navbar ul {   /*positions the items inside navbar containter */
-  display: flex;
-  justify-items: center; /*yes this ignores flex items, im aware*/
-  list-style: none; /*removed the dots*/
-  margin-top: 15px; 
-  margin-bottom: 15px; 
-
-   
-}
-
-
-.navbar ul li {  /*edits the static words in navbar list + added space between words*/
-  font-weight: 600;
-  border: 1px solid transparent;
-  border-radius: 28px;
-  margin: 0  20px; /*some spacing between the words in the container*/
- 
-}
-
-/*HOW THE NAVBAR INTERACTS AND WITH THE MOUSE */
-
-/* unvisited link */
-.navbar ul li a {
-color: greenyellow;
-font: system;
-text-decoration: none; /*removes blue color and underline*/
-transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*/
-}
-
-/* mouse over link */
-.navbar ul li a:hover { /*word will change when mouse hovers over it*/
-  color: rgb(228, 199, 199);
+    box-sizing: border-box; /*webpage accounts for margins and padding*/
+    margin: 0; 
+    padding: 0;
+  }
+  
+  
+  
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ebe9e9;
+  }
+  
+  
+  /*SETTING UP THE NAVBAR*/
+  .navbar {  /*navigation bar container on the page itself*/
+  display: flex;  /*makes the nav bar itself a container*/
+  justify-content: center;  /*moves items inside container along main axis*/
   background-color: rgb(24, 24, 24);
-  border: 1px solid black; /*will appear after transition*/
-  border-radius: 28px; /*will appear after transition*/
-  padding: 10px 10px; /*will as it transitions*/
-  box-shadow: 0px 0px 10px rgb(20, 243, 0); /*will appear after transition*/
-  cursor:pointer; /*changes the way cursor looks like*/
-}
-
-/* selected link */
-.navbar ul li a:active {
-  color: yellow;
-}
-
-/*The home page/Hero Image*/
-#home {
-  display: flex; 
-  flex-direction: column; /*will display flex items from top to bottom*/
-  background-color: rgb(24, 24, 24);
-  height: 820px;
-  width: 100%;
-  opacity: 0.9;            
-  justify-content: center; /*flex specific and specifies how items will behave along main axis inside container*/
-  align-items: center; /*aligned the items along cross axis*/
-  color: rgb(8, 8, 7);
-}
-
-#home ::before { /*creates a blank canvas that acts as a container block to work on to place hero image on*/
-  content: "";
-  position: absolute; /*chosen because i want elements overlapping the picture*/
+  align-items: center;
+  position:-webkit-sticky; /* for safari*/
+  position: fixed; /* sticks the navbar to the top*/
   top: 0;
-  right: 0;
-  background-color: black;
-  background-image: url(https://images.pexels.com/photos/3876946/pexels-photo-3876946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-repeat: no-repeat; /*image only appears once*/
-  background-position: center; 
-  background-attachment:scroll ; /*keeps the image at the top*/
-  background-size: cover; /*image covers the entire container*/
-  height: 820px;
   width: 100%;
-  z-index: -1; /*moves the image behind the elements, so it displays as an actual background image*/
-  opacity: .25;
-
-}
-
-.main { /*to edit how the items in the main block will itself display*/
-  display: flex;
-  flex-direction: column; /*the items will display below eachother, including the buttons*/
-  /*border: 1px solid whitesmoke;*/
-  align-items: center;
-  margin-left: 50%; /*moved the text to the right top side abit*/
-  margin-bottom: 10%; /*moves the flex items margins to the right top corner*/
-}
-
-#mainText { /*better display of text in the container*/
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 4.8rem;
-  margin-top: 35px;
-  text-align: left;
-  margin-right: auto;
+  opacity: .8; /*design, come back later*/
+  z-index: 1; /* !!!!!!this will bring the navbar to the front , so the opacity layer in the main doest affect it*/
+  opacity: 0.9;
+  }
   
-}
-
-
-
-#mainText1{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.7rem;
-  text-align: left;
-  margin-top: -20px;
-  margin-right: auto;
-  color: rgb(172, 106, 8);
- 
-}
-
-#mainText2 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.6rem;
-  text-align: left;
-  margin-right: auto;
-  padding-right: 35px;
-  margin-bottom: 35px;
-}
-
-/*THE BUTTONS ON THE HOME PAGE*/
-
-.Ibutton { /*the display of the button static mode*/
-  margin-bottom: 5px; /*space between buttons*/
-  padding: 10px; /*space between word and button border*/
-  background-color: transparent; 
-  color: rgb(99, 96, 96);
-  border: 1px solid rgb(7, 240, 7);
-  border-radius: 15px;
-  outline: none;
-  transition: .5s ease; /*how button will interact when hovered over*/
- 
-
-}
-
-.Ibutton a {
-  color: #afb93b;
-  text-decoration: none;
-}
-
-.Ibutton:hover { /*how button will interact when hovered over*/
-  color: rgb(228, 199, 199);
-  background-color: rgb(24, 24, 24);
-  border: 1px solid black; /*copied navbar hover settings here*/
-  border-radius: 28px; 
-  padding: 10px 10px; 
-  box-shadow: 0px 0px 10px rgb(28, 255, 7),  0px 0px 10px rgb(42, 253, 23); /*will make the */
-  cursor:pointer; 
-  font-weight: bolder;
-}
-
-
-/*TINY LITTLE ABOUT SECTION*/
-#About {
-  display:flex;
-  flex-direction: column;
-  margin-top: 15px;
-  margin-bottom: 50px;
-  box-sizing: border-box; /*essentially would prevent items from bleeding over the about container*/
- padding: 25px;
-}
-
-#About h1 {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 2.5rem;
-  letter-spacing: 0.5;
-}
-
-.AboutSection { /*contains the img, h2 and lil praragraph text*/
-  display: flex; /*by default flex will align items next to eachother in one row*/
-}
-
-
-
-.AboutSection img {
+  .navbar ul {   /*positions the items inside navbar containter */
+    display: flex;
+    justify-items: center; /*yes this ignores flex items, im aware*/
+    list-style: none; /*removed the dots*/
+    margin-top: 15px; 
+    margin-bottom: 15px; 
   
-  margin-top: 20px ;/*diplaying the image in the container */
-  margin-left: 20px;
-  height: 260px;
-  width: 350px;
-  padding-top: 15px;
- 
+     
+  }
+  
+  
+  .navbar ul li {  /*edits the static words in navbar list + added space between words*/
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    margin: 0  20px; /*some spacing between the words in the container*/
    
-}
-
-.intro { /*the paragragh text and the heading with my name container*/
- display: flex; /*want text to remain underneath eachother*/
- flex-direction: column;
- padding-top: 25px;
- padding-left: 20px;
- padding: right 25px;
- padding-bottom: 0;
- text-align: justify;
-
-}
-
-.intro h2 { /*how the h2 will specifically look like in the container*/
-  font-size: 2rem;
-  text-align: justify;
-}
-
-.intro p {
-  font-size: 1.1rem;
-}
-
-.basicInfo {
+  }
+  
+  /*HOW THE NAVBAR INTERACTS AND WITH THE MOUSE */
+  
+  /* unvisited link */
+  .navbar ul li a {
+  color: greenyellow;
+  font: system;
+  text-decoration: none; /*removes blue color and underline*/
+  transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*/
+  }
+  
+  /* mouse over link */
+  .navbar ul li a:hover { /*word will change when mouse hovers over it*/
+    color: rgb(228, 199, 199);
+    background-color: rgb(24, 24, 24);
+    border: 1px solid black; /*will appear after transition*/
+    border-radius: 28px; /*will appear after transition*/
+    padding: 10px 10px; /*will as it transitions*/
+    box-shadow: 0px 0px 10px rgb(20, 243, 0); /*will appear after transition*/
+    cursor:pointer; /*changes the way cursor looks like*/
+  }
+  
+  /* selected link */
+  .navbar ul li a:active {
+    color: yellow;
+  }
+  
+  /*The home page/Hero Image*/
+  #home {
+    display: flex; 
+    flex-direction: column; /*will display flex items from top to bottom*/
+    background-color: rgb(24, 24, 24);
+    height: 820px;
+    width: 100%;
+    opacity: 0.9;            
+    justify-content: center; /*flex specific and specifies how items will behave along main axis inside container*/
+    align-items: center; /*aligned the items along cross axis*/
+    color: rgb(8, 8, 7);
+  }
+  
+  #home ::before { /*creates a blank canvas that acts as a container block to work on to place hero image on*/
+    content: "";
+    position: absolute; /*chosen because i want elements overlapping the picture*/
+    top: 0;
+    right: 0;
+    background-color: black;
+    background-image: url(https://images.pexels.com/photos/3876946/pexels-photo-3876946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat; /*image only appears once*/
+    background-position: center; 
+    background-attachment:scroll ; /*keeps the image at the top*/
+    background-size: cover; /*image covers the entire container*/
+    height: 820px;
+    width: 100%;
+    z-index: -1; /*moves the image behind the elements, so it displays as an actual background image*/
+    opacity: .25;
+  
+  }
+  
+  .main { /*to edit how the items in the main block will itself display*/
+    display: flex;
+    flex-direction: column; /*the items will display below eachother, including the buttons*/
+    /*border: 1px solid whitesmoke;*/
+    align-items: center;
+    margin-left: 50%; /*moved the text to the right top side abit*/
+    margin-bottom: 10%; /*moves the flex items margins to the right top corner*/
+  }
+  
+  #mainText { /*better display of text in the container*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4.8rem;
+    margin-top: 35px;
+    text-align: left;
+    margin-right: auto;
+    
+  }
+  
+  
+  
+  #mainText1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.7rem;
+    text-align: left;
+    margin-top: -20px;
+    margin-right: auto;
+    color: rgb(172, 106, 8);
+   
+  }
+  
+  #mainText2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-right: auto;
+    padding-right: 35px;
+    margin-bottom: 35px;
+  }
+  
+  /*THE BUTTONS ON THE HOME PAGE*/
+  
+  .Ibutton { /*the display of the button static mode*/
+    margin-bottom: 5px; /*space between buttons*/
+    padding: 10px; /*space between word and button border*/
+    background-color: transparent; 
+    color: rgb(99, 96, 96);
+    border: 1px solid rgb(7, 240, 7);
+    border-radius: 15px;
+    outline: none;
+    transition: .5s ease; /*how button will interact when hovered over*/
+   
+  
+  }
+  
+  .Ibutton a {
+    color: #afb93b;
+    text-decoration: none;
+  }
+  
+  .Ibutton:hover { /*how button will interact when hovered over*/
+    color: rgb(228, 199, 199);
+    background-color: rgb(24, 24, 24);
+    border: 1px solid black; /*copied navbar hover settings here*/
+    border-radius: 28px; 
+    padding: 10px 10px; 
+    box-shadow: 0px 0px 10px rgb(28, 255, 7),  0px 0px 10px rgb(42, 253, 23); /*will make the */
+    cursor:pointer; 
+    font-weight: bolder;
+  }
+  
+  
+  /*TINY LITTLE ABOUT SECTION*/
+  #About {
+    display:flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    box-sizing: border-box; /*essentially would prevent items from bleeding over the about container*/
+   padding: 25px;
+  }
+  
+  #About h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    letter-spacing: 0.5;
+  }
+  
+  .AboutSection { /*contains the img, h2 and lil praragraph text*/
+    display: flex; /*by default flex will align items next to eachother in one row*/
+  }
+  
+  
+  
+  .AboutSection img {
+    
+    margin-top: 20px ;/*diplaying the image in the container */
+    margin-left: 20px;
+    height: 260px;
+    width: 350px;
+    padding-top: 15px;
+   
+     
+  }
+  
+  .intro { /*the paragragh text and the heading with my name container*/
+   display: flex; /*want text to remain underneath eachother*/
+   flex-direction: column;
+   padding-top: 25px;
+   padding-left: 20px;
+   padding: right 25px;
+   padding-bottom: 0;
+   text-align: justify;
+  
+  }
+  
+  .intro h2 { /*how the h2 will specifically look like in the container*/
+    font-size: 2rem;
+    text-align: justify;
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+  }
+  
+  .basicInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 19px;
+    
+  /*background-color: rgb(189, 185, 185);*/
+  
+  }
+  
+  .basicInfo ul { /*the basic info list*/
+    justify-content: space-between;
+    list-style; /*removed the dots*/
+    margin-bottom: 15px; 
+  
+  }
+  
+  .basicInfo ul li{ /*list items*/
+    /*border: 1px solid black;*/
+    margin: 10px 0;
+  }
+  
+  /*the span items*/
+  
+  #item1, #item2, #item3, #item4 {
+    color: rgb(56, 37, 31);
+  }
+  
+  #item1 { /*i want each item to display with equal space between them*/
+    margin-left: 100px;
+  }
+  
+  #item2 {
+    margin-left: 89px;
+  }
+  
+  #item3 {
+    margin-left: 63.5px;
+  }
+  
+  #item4 {
+    margin-left: 65px;
+  }
+  
+  /*EDUCATION AND EXPERIEMCE SECTIONS*/
+  
+  
+  #main { /*copied the layout of the about section*/
+    box-sizing: border-box; 
+   padding: 25px;
+   text-align: justify;
+   padding-left: 100px;
+   padding-right: 100px;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   margin-left: 25px;
+   margin-right: 25px;
+  }
+  
+  .mainsection{ /*the container of the flexed items*/
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+   
+  }
+  
+  #main h2{ /*the heading. this is outside of the flexbox*/
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 0.5;
+    margin-bottom: 20px;
+    
+  }
+  
+  .Education { 
+    display: flex; 
+    flex-direction: column;
+   
+  }
+  
+  .divider { /*adds a customisable line in the middle*/
+    border: 3px solid black;
+    margin-left: 20px;/*pushes the two boxes away from it*/
+    margin-right: 20px;
+  }
+  
+  .Experience { 
+    display: flex; 
+    flex-direction: column;
+    
+  }
+  
+  .edu1 {
+    width: 500px;
+  
+    
+    height: 160px;
+    padding: 5px;
+    border: 1px solid rgb(88, 84, 78);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .edu2 {
+    width: 500px;
+    height: 160px;
+    padding: 5px;
+    border: 1px solid tan;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .exp1 {
+    width: 500px;
+    height: 160px;
+    padding: 5px;
+    border: 1px solid rgb(88, 84, 78);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .exp2 {
+    width: 500px;
+    height: 160px;
+    padding: 5px;
+    border: 1px solid tan;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .mainHeading {
+    margin-bottom: 10px;
+    
+  }
+  
+  #mainContent {
+    text-align: right;
+    color: rgb(99, 99, 88);
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  #mainContenter {
+    text-align: left;
+    color: rgb(61, 61, 55);
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  #date {
+    color: rgb(44, 87, 2);
+    
+  }
+  
+  #mainNamer {
+    margin-bottom: 6px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*THE SKILLS BAR*/
+  
+  
+  .skillSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+  }
+  
+  
+  /* Container for skill bars */
+  .container {
+    margin-left: 48%;
+    border-radius: 20px;
+    width: 65%; 
+    background-color: #464338; /* Grey background */
+  }
+  
+  #skills {
+    text-align: left; /* Right-align text */
+    padding-top: 15px; /* Add top padding */
+    padding-bottom: 2px; /* Add bottom padding */
+    color: rgb(24, 22, 22); /* text color */
+    align-items: center;
+  
+    
+  }
+  
+  #skillsname {
+    margin-left: 49%;
+    margin-top: 20px;
+    font-size: larger;
+    padding-bottom: 5px;
+    font-weight: 800px;
+  }
+  
+  #skills h2{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    letter-spacing: 0.5;
+    padding-top: 20px;
+   
+  }
+  
+  
+  
+  .html {width: 85%; background-color: #72e209;}
+  .css {width: 70%; background-color: #72e209;} 
+  .js {width: 60%; background-color: #72e209;} 
+  .microsoft {width: 90%; background-color: #72e209;} 
+  .ui {width: 75%; background-color: #72e209;}
+  .graphicD  {width: 75%; background-color: #72e209;}
+  
+  
+  .container:hover {
+    background-color: rgb(17, 16, 16);
+    
+  
+  }
+  
+  
+  /*PORTFOLIO SECTION*/
+  
+  #Portfolio { /*the container*/
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
-  margin-left: 19px;
-  
-/*background-color: rgb(189, 185, 185);*/
-
-}
-
-.basicInfo ul { /*the basic info list*/
-  justify-content: space-between;
-  list-style; /*removed the dots*/
-  margin-bottom: 15px; 
-
-}
-
-.basicInfo ul li{ /*list items*/
-  /*border: 1px solid black;*/
-  margin: 10px 0;
-}
-
-/*the span items*/
-
-#item1, #item2, #item3, #item4 {
-  color: rgb(56, 37, 31);
-}
-
-#item1 { /*i want each item to display with equal space between them*/
-  margin-left: 100px;
-}
-
-#item2 {
-  margin-left: 89px;
-}
-
-#item3 {
-  margin-left: 63.5px;
-}
-
-#item4 {
-  margin-left: 65px;
-}
-
-/*EDUCATION AND EXPERIEMCE SECTIONS*/
-
-
-#main { /*copied the layout of the about section*/
-  box-sizing: border-box; 
- padding: 25px;
- text-align: justify;
- padding-left: 100px;
- padding-right: 100px;
- margin-top: 10px;
- margin-bottom: 15px;
- margin-left: 25px;
- margin-right: 25px;
-}
-
-.mainsection{ /*the container of the flexed items*/
-  display: flex;
-  justify-content: center;
-  margin-left: 25px;
-  margin-right: 25px;
- 
-}
-
-#main h2{ /*the heading. this is outside of the flexbox*/
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.5rem;
-  letter-spacing: 0.5;
-  margin-bottom: 20px;
-  
-}
-
-.Education { 
-  display: flex; 
-  flex-direction: column;
- 
-}
-
-.divider { /*adds a customisable line in the middle*/
-  border: 3px solid black;
-  margin-left: 20px;/*pushes the two boxes away from it*/
-  margin-right: 20px;
-}
-
-.Experience { 
-  display: flex; 
-  flex-direction: column;
-  
-}
-
-.edu1 {
-  width: 500px;
-
-  
-  height: 160px;
-  padding: 5px;
-  border: 1px solid rgb(88, 84, 78);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.edu2 {
-  width: 500px;
-  height: 160px;
-  padding: 5px;
-  border: 1px solid tan;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.exp1 {
-  width: 500px;
-  height: 160px;
-  padding: 5px;
-  border: 1px solid rgb(88, 84, 78);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.exp2 {
-  width: 500px;
-  height: 160px;
-  padding: 5px;
-  border: 1px solid tan;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
-
-.mainHeading {
-  margin-bottom: 10px;
-  
-}
-
-#mainContent {
-  text-align: right;
-  color: rgb(99, 99, 88);
-  font-style: italic;
-  font-weight: bold;
-}
-
-#mainContenter {
-  text-align: left;
-  color: rgb(61, 61, 55);
-  font-style: italic;
-  font-weight: bold;
-}
-
-#date {
-  color: rgb(44, 87, 2);
-  
-}
-
-#mainNamer {
-  margin-bottom: 6px;
-}
-
-
-
-
-
-
-
-/*THE SKILLS BAR*/
-
-
-.skillSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: 500px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  
-}
-
-
-/* Container for skill bars */
-.container {
-  margin-left: 48%;
-  border-radius: 20px;
-  width: 65%; 
-  background-color: #464338; /* Grey background */
-}
-
-#skills {
-  text-align: left; /* Right-align text */
-  padding-top: 15px; /* Add top padding */
-  padding-bottom: 2px; /* Add bottom padding */
-  color: rgb(24, 22, 22); /* text color */
   align-items: center;
-
+  padding: 20px
+  }
   
-}
-
-#skillsname {
-  margin-left: 49%;
-  margin-top: 20px;
-  font-size: larger;
-  padding-bottom: 5px;
-  font-weight: 800px;
-}
-
-#skills h2{
+  #Portfolio h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: antiquewhite;
+    margin-top: 18px;
+    
+  }
+  
+  .gallery { 
+    display: flex; /*makes the gallery container flexed*/
+   flex-wrap: wrap; /*puts the images all in the flex container*/
+   justify-content: space-around; /*creates 'column' space between flex boxes in the container*/
+   box-sizing: border-box;
+  
+  }
+  
+  .gallery img {
+    width: 360px;
+    height: 240px;
+    margin: 10px /*created a margin to place the container in*/
+    
+  }
+  
+  
+  
+  
+  /*The contact form*/
+  #cntct {
+    background-color: #464338;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  
+  .contactform {
+    background-color: #333;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  form {
+    margin-top: 20px;
+  }
+  
+  #cntct p {
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 2.5rem;
-  letter-spacing: 0.5;
-  padding-top: 20px;
- 
-}
-
-
-
-.html {width: 85%; background-color: #72e209;}
-.css {width: 70%; background-color: #72e209;} 
-.js {width: 60%; background-color: #72e209;} 
-.microsoft {width: 90%; background-color: #72e209;} 
-.ui {width: 75%; background-color: #72e209;}
-.graphicD  {width: 75%; background-color: #72e209;}
-
-
-.container:hover {
-  background-color: rgb(17, 16, 16);
-  
-
-}
-
-
-/*PORTFOLIO SECTION*/
-
-#Portfolio { /*the container*/
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 20px
-}
-
-#Portfolio h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: antiquewhite;
-  margin-top: 18px;
-  
-}
-
-.gallery { 
-  display: flex; /*makes the gallery container flexed*/
- flex-wrap: wrap; /*puts the images all in the flex container*/
- justify-content: space-around; /*creates 'column' space between flex boxes in the container*/
- box-sizing: border-box;
-
-}
-
-.gallery img {
-  width: 360px;
-  height: 240px;
-  margin: 10px /*created a margin to place the container in*/
-  
-}
-
-
-
-
-/*The contact form*/
-#cntct {
-  background-color: #464338;
-  padding-bottom: 25px;
-  padding-top: 25px;
-}
-
-.contactform {
-  background-color: #333;
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-}
-form {
-  margin-top: 20px;
-}
-
-#cntct p {
-text-align: center;
-color: #ddc5c5;
- justify-content: space-around;
- font-size: 1.005rem;
- padding: 0 40px;
-}
-
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input:focus, textarea:focus {
-  border-color: #18e222;
-}
-
-textarea {
-  margin-bottom: 20px;
-}
-
-#cntct button {
-  display: block;
-  color: #181d14;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 25px;
-  cursor:pointer;
-  margin-bottom: 50px;
-  border: 1px solid black;
-  text-decoration: none;
-  background-color: #97651a;
-  border-radius: 10px;
-  transition: all .1s ease;
-}
-
-#cntct button:hover {
-  font-size: large;
-  font-weight: bolder;
-  text-shadow: 2px 2px 8px #48ff00;
-  color: black;
-  background-color: #afb93b;
-  box-shadow: 0 0 3px #48ff00;
-  border: 1.2px transparent red;
-}
-
-
-
-
-
-/*the footer with social media links*/
-
-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  padding-bottom: 20px;
-  padding-top: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #201f1f;
-  font-family: 'Times New Roman', Times, serif;
-
-  
-}
-footer a {
-  
-  text-decoration: none;
- font-weight: bolder;
-  text-align: center;
-  color: rgb(151, 101, 26);
-  transition: all .5s ease;
-}
-
-footer a:hover { 
-  border: 1px solid greenyellow;
-  font-weight: bolder;
   color: #ddc5c5;
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: 0px 0px 10px rgb(42, 253, 23);
-
+   justify-content: space-around;
+   font-size: 1.005rem;
+   padding: 0 40px;
+  }
   
-}
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #18e222;
+  }
+  
+  textarea {
+    margin-bottom: 20px;
+  }
+  
+  #cntct button {
+    display: block;
+    color: #181d14;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    cursor:pointer;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: #97651a;
+    border-radius: 10px;
+    transition: all .1s ease;
+  }
+  
+  #cntct button:hover {
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 2px 2px 8px #48ff00;
+    color: black;
+    background-color: #afb93b;
+    box-shadow: 0 0 3px #48ff00;
+    border: 1.2px transparent red;
+  }
+  
+  
+  
+  
+  
+  /*the footer with social media links*/
+  
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #201f1f;
+    font-family: 'Times New Roman', Times, serif;
+  
+    
+  }
+  footer a {
+    
+    text-decoration: none;
+   font-weight: bolder;
+    text-align: center;
+    color: rgb(151, 101, 26);
+    transition: all .5s ease;
+  }
+  
+  footer a:hover { 
+    border: 1px solid greenyellow;
+    font-weight: bolder;
+    color: #ddc5c5;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(42, 253, 23);
+  
+    
+  }
