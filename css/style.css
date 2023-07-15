@@ -146,12 +146,13 @@
   /*THE BUTTONS ON THE HOME PAGE*/
   
   .Ibutton { /*the display of the button static mode*/
+    margin-right: 250px;
     margin-bottom: 5px; /*space between buttons*/
     padding: 10px; /*space between word and button border*/
-    background-color: transparent; 
+    background-color:#131412; 
     color: rgb(99, 96, 96);
     border: 1px solid rgb(7, 240, 7);
-    border-radius: 15px;
+    border-radius: 6px;
     outline: none;
     transition: .5s ease; /*how button will interact when hovered over*/
    
@@ -169,7 +170,7 @@
     border: 1px solid black; /*copied navbar hover settings here*/
     border-radius: 28px; 
     padding: 10px 10px; 
-    box-shadow: 0px 0px 10px rgb(28, 255, 7),  0px 0px 10px rgb(42, 253, 23); /*will make the */
+    box-shadow: 0px 0px 10px rgb(64, 255, 46),  0px 0px 10px rgb(42, 253, 23); /*will make the */
     cursor:pointer; 
     font-weight: bolder;
   }
@@ -479,7 +480,7 @@
     font-weight: bold;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: antiquewhite;
+    color: rgb(17, 16, 15);
     margin-top: 18px;
     
   }
@@ -504,13 +505,13 @@
   
   /*The contact form*/
   #cntct {
-    background-color: #464338;
+    background-color: #0f0f0d;
     padding-bottom: 25px;
     padding-top: 25px;
   }
   
   .contactform {
-    background-color: #333;
+    background-color: #555555;
     border: 1px solid black;
     border-radius: 10px;
     width: 500px;
@@ -608,10 +609,11 @@
   footer a:hover { 
     border: 1px solid greenyellow;
     font-weight: bolder;
-    color: #ddc5c5;
+    color: #cec6c6;
     border-radius: 15px;
     padding: 10px;
-    box-shadow: 0px 0px 10px rgb(42, 253, 23);
+    box-shadow: 0px 0px 10px rgb(23, 230, 4);
   
     
   }
+ 
