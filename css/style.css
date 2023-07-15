@@ -8,7 +8,8 @@
 
 
 body {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #ebe9e9;
 }
 
 
@@ -63,7 +64,7 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   border: 1px solid black; /*will appear after transition*/
   border-radius: 28px; /*will appear after transition*/
   padding: 10px 10px; /*will as it transitions*/
-  box-shadow: 0px 0px 10px rgb(28, 255, 7); /*will appear after transition*/
+  box-shadow: 0px 0px 10px rgb(20, 243, 0); /*will appear after transition*/
   cursor:pointer; /*changes the way cursor looks like*/
 }
 
@@ -130,6 +131,12 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   border-radius: 15px;
   outline: none;
   transition: .5s ease; /*how button will interact when hovered over*/
+
+}
+
+.Ibutton a {
+  color: #afb93b;
+  text-decoration: none;
 }
 
 .Ibutton:hover { /*how button will interact when hovered over*/
@@ -389,7 +396,7 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   background-color: #464338; /* Grey background */
 }
 
-.skills {
+#skills {
   text-align: left; /* Right-align text */
   padding-top: 15px; /* Add top padding */
   padding-bottom: 2px; /* Add bottom padding */
@@ -407,7 +414,7 @@ transition: all 1s ease;/*changes to color chosen for link hover smoother in 2s*
   font-weight: 800px;
 }
 
-.skills h2{
+#skills h2{
   text-align: center;
   font-weight: bold;
   margin-bottom: 5px;
@@ -473,7 +480,7 @@ padding: 20px
 
 
 /*The contact form*/
-.cntct {
+#cntct {
   background-color: #464338;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -498,7 +505,7 @@ form {
   margin-top: 20px;
 }
 
-.cntct p {
+#cntct p {
 text-align: center;
 color: #ddc5c5;
  justify-content: space-around;
@@ -522,7 +529,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.cntct button {
+#cntct button {
   display: block;
   color: #181d14;
   margin-left: auto;
@@ -537,7 +544,7 @@ textarea {
   transition: all .1s ease;
 }
 
-.cntct button:hover {
+#cntct button:hover {
   font-size: large;
   font-weight: bolder;
   text-shadow: 2px 2px 8px #48ff00;
