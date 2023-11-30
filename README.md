@@ -1,4 +1,2 @@
 # final-project
- UNFORTUNATELY COULD NOT COMPLETE THIS IN TIME.
- 
- FAVICON IS ALSO BROKEN.
+I was tasked to create a resume website for myself for future use.
